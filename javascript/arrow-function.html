@@ -9,28 +9,31 @@
             function printMyName(name) {
                 console.log(name);
             }
-            printMyName('Tushar');
+            printMyName('Udemy');
 
 
             // No argumemts 
-            const printMyName1 = () => console.log('Tushar');
-            printMyName1('Tushar');
+            const printMyName1 = () => console.log('Udemy');
+            printMyName1('Udemy');
 
             // Only for one argument
-            const printMyName2 = (name) => console.log(name);
-            printMyName2('Tushar');
+            const printMyName2 = name => console.log(name);
+            printMyName2('Udemy');
 
             // More than one argument
             const printMyName3 = (firstName, lastName) => console.log(`${firstName} ${lastName}`);
-            printMyName3('Tushar', 'Jagtap');
+            printMyName3('Udemy', 'Course');
 
             // More than one argument but multiple lines
             const printMyName4 = (firstName, lastName) => {
                 //You can do more stuff here
                 console.log(`${firstName} ${lastName}`);
             };
-            printMyName4('Tushar', 'Jagtap');
+            printMyName4('Udemy', 'Course');
 
+            // If want to return something 
+            const multiply = number => number * 2;
+            console.log(multiply(2))
         </script>
 
     </body>
