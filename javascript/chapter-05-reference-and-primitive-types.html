@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>    
+    <body>
+        <h2>JavaScript : Reference and Primitive Types</h2>
+
+        1. There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null.
+        </br></br>
+        
+        2. Objects and Arrays are reference types
+
+        <script>
+            
+            const course = {name: 'React', type: 'Tutorial', year: 2021};
+
+            const newCourse = course;
+
+            course.name = 'Javascript'
+
+            // This is suppose to print an original object but it doesn't.
+            // This is due to it is refering to the same pointer on "user" object memory
+            console.log(newCourse);
+            // {name: 'Javascript', type: 'Tutorial', year: 2021};
+            
+            
+            /*********************************************************************/
+
+            
+            // To avoid above issue lets copy all keys using spread operator
+            const favCourse = {name: 'React', type: 'Tutorial', year: 2021};
+
+            const newFavCourse = {
+                ...favCourse
+            };
+
+            favCourse.name = 'Javascript';
+
+            console.log(newFavCourse);
+            // {name: 'React', type: 'Tutorial', year: 2021};
+
+            
+        </script>
+
+    </body>
+</html>
