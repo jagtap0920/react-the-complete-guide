@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>    
+    <body>
+        <h2>JavaScript : Destructuring</h2>
+
+        1. Easily extract array elements or Object properties and store them in variables
+
+        <script>
+            const numbers = [1, 2, 3];
+
+            // Extract first 2 elements
+            [number1, number2] = numbers;
+
+            console.log(number1, number2);
+
+            // Extract first and last element
+            [number1, , number3] = numbers;
+
+            console.log(number1, number3);
+
+
+            // Object destructuring
+            const user = {name: 'React', type: 'Tutorial', year: 2021};
+
+            const {name, type} = user;
+
+            console.log(`${name} ${type}`);
+            
+        </script>
+
+    </body>
+</html>
