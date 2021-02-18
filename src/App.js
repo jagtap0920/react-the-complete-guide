@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       <h1>This is React App</h1>
-      <Person />
+      <Person name="Tushar" age="29" />
+      <Person name="Anshdeep" age="27" />
     </div>
 
       //React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'This is react JSX'))
